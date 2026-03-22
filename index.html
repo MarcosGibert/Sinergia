@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sinergia Clinic – Tu espacio, tu salud, tú</title>
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <link rel="icon" type="image/png" href="icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- FontAwesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+      /* Basic resets and typography */
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      /* Hero section styles */
+      .hero {
+        background: linear-gradient(135deg, #004d7a, #008793, #00bf72, #a8eb12);
+        color: #fff;
+        padding: 100px 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .hero h1 {
+        font-weight: 700;
+      }
+      .hero h2 {
+        font-weight: 300;
+      }
+
+      /* Section spacing */
+      section {
+        padding: 60px 0;
+      }
+      .service-section img {
+        max-width: 300px;
+      }
+
+      /* Contact section */
+      #contacto {
+        background-color: #f8f9fa;
+      }
+      .embed-responsive {
+        border-radius: 0.25rem;
+        overflow: hidden;
+      }
+
+      /* Testimonials styling */
+      .testimonial-card {
+        background: #f8f9fa;
+        padding: 1.5rem;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #343a40;
+        color: #adb5bd;
+        padding: 20px 0;
+      }
+      footer a {
+        color: #adb5bd;
+      }
+      footer a:hover {
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Sinergia Clinic</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="#fisioterapia">Fisioterapia</a></li>
+            <li class="nav-item"><a class="nav-link" href="#entrenamiento">Entrenamiento</a></li>
+            <li class="nav-item"><a class="nav-link" href="#nutricion">Nutrición</a></li>
+            <li class="nav-item"><a class="nav-link" href="#podologia">Podología</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/sinergiaclinic" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/sinergiaclinic" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+      <div class="container">
+        <h1 class="display-3">Sinergia Clinic</h1>
+        <h2 class="display-5">Tu espacio, tu salud, tú.</h2>
+      </div>
+    </header>
+
+    <!-- Fisioterapia Section -->
+    <section id="fisioterapia" class="service-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5 text-center mb-4 mb-md-0">
+            <img src="fisioterapia.png" alt="Fisioterapia" class="img-fluid rounded-circle shadow">
+          </div>
+          <div class="col-md-7">
+            <h2>Fisioterapia</h2>
+            <p>Recupera tu bienestar con nuestros tratamientos especializados:</p>
+            <ul>
+              <li>Osteopatía</li>
+              <li>Recuperación deportiva</li>
+              <li>Dolor crónico</li>
+              <li>Escoliosis, cervicalgia y lumbalgia</li>
+              <li>Migrañas, cefaleas y ATM</li>
+              <li>Ecografía, EPTE y neuromodulación</li>
+            </ul>
+          <!-- Call-to-action buttons -->
+          <div class="mt-4">
+            <a href="#contacto" class="btn btn-primary rounded-pill mr-3 mb-2" onclick="selectService('Fisioterapia')">Reservar Cita</a>
+            <a href="tel:+34633765320" class="btn btn-outline-primary rounded-pill mb-2"><i class="fas fa-phone"></i> 633&nbsp;765&nbsp;320</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Entrenamiento Section -->
+    <section id="entrenamiento" class="service-section bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5 order-md-2 text-center mb-4 mb-md-0">
+            <img src="entrenamiento.png" alt="Entrenamiento" class="img-fluid rounded-circle shadow">
+          </div>
+          <div class="col-md-7 order-md-1">
+            <h2>Entrenamiento</h2>
+            <p>Programas de ejercicio para todos los niveles:</p>
+            <ul>
+              <li>Entrenamiento personal 1‑1</li>
+              <li>Entrenamiento duo / pareja</li>
+              <li>Grupos reducidos</li>
+              <li>Deportistas</li>
+              <li>A distancia / online</li>
+            </ul>
+          <!-- Call-to-action buttons -->
+          <div class="mt-4">
+            <a href="#contacto" class="btn btn-primary rounded-pill mr-3 mb-2" onclick="selectService('Entrenamiento')">Reservar Cita</a>
+            <a href="tel:+34636993167" class="btn btn-outline-primary rounded-pill mb-2"><i class="fas fa-phone"></i> 636&nbsp;993&nbsp;167</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nutrición Section -->
+    <section id="nutricion" class="service-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5 text-center mb-4 mb-md-0">
+            <img src="nutricion.png" alt="Nutrición" class="img-fluid rounded-circle shadow">
+          </div>
+          <div class="col-md-7">
+            <h2>Nutrición</h2>
+            <p>Adquiere hábitos saludables con nuestro equipo de nutrición:</p>
+            <ul>
+              <li>Educación alimentaria</li>
+              <li>Cambio de hábitos</li>
+              <li>Nutrición deportiva</li>
+              <li>Nutrición clínica</li>
+              <li>Desordenes hormonales: hipotiroidismo / hipertiroidismo</li>
+              <li>Salud hormonal de la mujer</li>
+            </ul>
+          <!-- Call-to-action buttons -->
+          <div class="mt-4">
+            <a href="#contacto" class="btn btn-primary rounded-pill mr-3 mb-2" onclick="selectService('Nutrición')">Reservar Cita</a>
+            <a href="tel:+34636993167" class="btn btn-outline-primary rounded-pill mb-2"><i class="fas fa-phone"></i> 636&nbsp;993&nbsp;167</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Podología Section -->
+    <section id="podologia" class="service-section bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5 order-md-2 text-center mb-4 mb-md-0">
+            <img src="podologia.png" alt="Podología" class="img-fluid rounded-circle shadow">
+          </div>
+          <div class="col-md-7 order-md-1">
+            <h2>Podología</h2>
+            <p>Cuida tus pies con nuestros especialistas en podología:</p>
+            <ul>
+              <li>Estudio y análisis de la pisada</li>
+              <li>Plantillas personalizadas</li>
+              <li>Quiropodia</li>
+              <li>Podología infantil</li>
+              <li>Cirugía ungueal</li>
+              <li>Tratamiento de hongos y verrugas plantares</li>
+            </ul>
+          <!-- Call-to-action buttons -->
+          <div class="mt-4">
+            <a href="#contacto" class="btn btn-primary rounded-pill mr-3 mb-2" onclick="selectService('Podología')">Reservar Cita</a>
+            <a href="tel:+34633765320" class="btn btn-outline-primary rounded-pill mb-2"><i class="fas fa-phone"></i> 633&nbsp;765&nbsp;320</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios Section -->
+    <section id="testimonios" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Lo que dicen nuestros pacientes</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="testimonial-card">
+              <p class="mb-3">"Después de meses con dolor de espalda, en Sinergia me ayudaron a recuperarme completamente. Profesionales excelentes."</p>
+              <p class="mb-0"><strong>María&nbsp;G.</strong></p>
+              <small class="text-muted">Fisioterapia</small>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial-card">
+              <p class="mb-3">"El entrenamiento personalizado ha cambiado mi vida. Resultados visibles y un trato increíble."</p>
+              <p class="mb-0"><strong>Carlos&nbsp;M.</strong></p>
+              <small class="text-muted">Entrenamiento</small>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial-card">
+              <p class="mb-3">"Finalmente encontré una nutricionista que entiende mis necesidades. Plan realista y efectivo."</p>
+              <p class="mb-0"><strong>Laura&nbsp;P.</strong></p>
+              <small class="text-muted">Nutrición</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto">
+      <div class="container">
+        <div class="row align-items-start">
+          <div class="col-md-6 mb-4">
+            <h2 class="mb-4">Contacto</h2>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="contact-name">Nombre y Apellidos <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="contact-name" placeholder="Tu nombre completo" required aria-required="true">
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email</label>
+                <input type="email" class="form-control" id="contact-email" placeholder="tu@email.com">
+                <small class="form-text text-muted">Para recibir confirmación</small>
+              </div>
+              <div class="form-group">
+                <label for="contact-service">Servicio de interés <span class="text-danger">*</span></label>
+                <select class="form-control" id="contact-service" required aria-required="true">
+                  <option value="Fisioterapia">Fisioterapia</option>
+                  <option value="Entrenamiento">Entrenamiento</option>
+                  <option value="Nutrición">Nutrición</option>
+                  <option value="Podología">Podología</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="contact-message">Mensaje (opcional)</label>
+                <textarea class="form-control" id="contact-message" rows="3" placeholder="¿Algo más que quieras contarnos?"></textarea>
+              </div>
+              <div class="form-group">
+                <button type="button" class="btn btn-success btn-block" onclick="gotoWhatsApp()">💬 Contactar por WhatsApp</button>
+                <button type="button" class="btn btn-outline-primary btn-block" onclick="sendEmail()">📧 Enviar Email</button>
+              </div>
+            </form>
+            <hr class="my-4">
+            <h5>Información de contacto</h5>
+            <p class="mb-2"><strong>📍 Dirección:</strong><br>Av. del Primat Reig, 70, bajo izqd<br>46010 Valencia</p>
+            <p class="mb-2"><strong>📞 Teléfonos:</strong><br><a href="tel:+34633765320">633&nbsp;765&nbsp;320</a> (Fisioterapia / Podología)<br><a href="tel:+34636993167">636&nbsp;993&nbsp;167</a> (Entrenamiento / Nutrición)</p>
+            <p><strong>🕐 Horario:</strong><br>Lunes a Viernes: 9:00 - 20:00<br><small class="text-muted">Cita previa recomendada</small></p>
+          </div>
+          <div class="col-md-6">
+            <iframe class="w-100 rounded" height="500" style="border:0;" allowfullscreen loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12317.697683129785!2d-0.36933853022460933!3d39.48232999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6049e8e14ab7e7%3A0x2c1fb2a8499367e5!2sFisioterapia%20Sinergia%20Clinic!5e0!3m2!1sen!2ses!4v1632049299380!5m2!1sen!2ses"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <small>&copy; 2026 Sinergia Clinic. Todos los derechos reservados.</small>
+      </div>
+    </footer>
+
+    <!-- JavaScript dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Select a service in the contact form when CTA buttons are clicked
+      function selectService(service) {
+        var select = document.getElementById('contact-service');
+        if (select) {
+          select.value = service;
+        }
+      }
+      // Open WhatsApp with a pre-filled message
+      function gotoWhatsApp() {
+        var name = document.getElementById('contact-name').value.trim();
+        if (!name) {
+          alert('Por favor, introduce tu nombre completo.');
+          return;
+        }
+        var select = document.getElementById('contact-service').value;
+        var message = document.getElementById('contact-message').value.trim();
+        var tlf = '';
+        if (select === 'Fisioterapia' || select === 'Podología') {
+          tlf = '34633765320';
+        } else {
+          tlf = '34636993167';
+        }
+        var text = 'Hola, soy ' + name + ' y me gustaría informarme sobre ' + select;
+        if (message) {
+          text += '. ' + message;
+        }
+        text += '!';
+        var url = 'https://wa.me/' + tlf + '?text=' + encodeURIComponent(text);
+        window.open(url, '_blank');
+      }
+      // Create a mailto link to send an email
+      function sendEmail() {
+        var name = document.getElementById('contact-name').value.trim();
+        if (!name) {
+          alert('Por favor, introduce tu nombre completo.');
+          return;
+        }
+        var email = document.getElementById('contact-email').value.trim();
+        var select = document.getElementById('contact-service').value;
+        var message = document.getElementById('contact-message').value.trim();
+        var mailtoLink = 'mailto:info@sinergiaclinic.es?subject=' + encodeURIComponent('Consulta sobre ' + select) + '&body=' + encodeURIComponent('Nombre: ' + name + '\n' + (email ? 'Email: ' + email + '\n' : '') + 'Servicio: ' + select + '\n\n' + (message ? 'Mensaje:\n' + message : ''));
+        window.location.href = mailtoLink;
+      }
+    </script>
+  </body>
+</html>
