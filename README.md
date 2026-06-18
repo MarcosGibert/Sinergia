@@ -58,19 +58,4 @@ This project was built as a lightweight website for a real local clinic. The goa
 - `icon.png` is used as the site icon.
 - `fisioterapia.png`, `entrenamiento.png`, `nutricion.png`, and `podologia.png` support the service sections.
 
-## Limitations
-
-- The contact form does not submit to a backend; it opens WhatsApp or the user's email client.
-- External libraries are loaded from CDNs rather than bundled locally.
-- The hero section currently uses a gradient background instead of a clinic or brand image.
-- Testimonials are static page content.
-
-## Possible Improvements
-
-- Add a real contact form backend or form service integration.
-- Replace the gradient hero with authentic clinic imagery.
-- Add SEO metadata and Open Graph preview tags.
-- Add structured business data for local search.
-- Improve performance by optimizing image sizes and loading behavior.
-- Add a privacy notice for contact and external map/social links.
 
