@@ -28,26 +28,6 @@ The interface is currently in Spanish.
 - [Bootstrap 4](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
 - [Font Awesome](https://fontawesome.com/) for social and contact icons
 
-## Running Locally
-
-Clone the repository and open `index.html` in a browser:
-
-```bash
-git clone https://github.com/MarcosGibert/Sinergia.git
-cd Sinergia
-open index.html
-```
-
-You can also serve the folder locally:
-
-```bash
-python3 -m http.server 8000
-```
-
-Then visit `http://localhost:8000`.
-
-Because the site loads Bootstrap, Font Awesome, jQuery, and the Google Maps embed from external CDNs/services, an internet connection is required for the full experience.
-
 ## Project Context
 
 This project was built as a lightweight website for a real local clinic. The goal was to create a clear digital presence where visitors can understand the available services, find the clinic, and start a booking conversation through familiar contact channels.
